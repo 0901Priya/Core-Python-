@@ -1,0 +1,58 @@
+#Ques1
+def dec(function):
+     def inner():
+         print("start")
+         function()
+         print("end")
+     return inner
+@dec
+def hello():
+    print("Hello")
+hello()
+
+#Ques2
+def dec(fun):
+    def inner(name):
+        print("starting")
+        fun(name)
+        print("done")
+    return inner
+@dec
+def greet(name):
+    print("Hello",name)
+greet("Priya")
+
+#Ques3
+def double_result(fun):
+    def inner():
+        result=fun()
+        return result*2
+    return inner
+@double_result
+def get_value():
+    return 25
+print(get_value())
+
+#Ques4
+user_role="student"
+def check(fun):
+    def inner():
+        if user_role=="admin":
+            fun()
+        else:
+            print("Access denied")
+    return inner
+@check
+def show():
+    print("Welcome Admin")
+show()
+
+#Ques5
+def upper(fun):
+    def inner():
+        return fun().upper()
+    return inner
+@upper
+def get_msg():
+    return "Hello world"
+print(get_msg())
