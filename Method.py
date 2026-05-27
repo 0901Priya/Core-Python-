@@ -216,7 +216,7 @@ V3=Vector(10,10)
 print(V1+V2+V3)
 print(V2-V1+V3)
 print(V1-V2+V3)
-print(V1-V2-V3)W
+print(V1-V2-V3)
 print(V3-V2+V1)
 
  class Books:

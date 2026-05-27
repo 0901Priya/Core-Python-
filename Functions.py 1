@@ -47,7 +47,7 @@ def show():
     print("Welcome Admin")
 show()
 
-#Ques5
+#ques5
 def upper(fun):
     def inner():
         return fun().upper()
